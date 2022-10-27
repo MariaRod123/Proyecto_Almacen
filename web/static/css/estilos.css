@@ -1,0 +1,95 @@
+#login-card{
+    margin-top: 10%;
+
+}
+ #login-modal-body{
+     text-align: justify;
+ }
+
+
+
+.modal-header {
+    background-color: #D6EAF8;
+
+    }
+
+.modal-footer {
+    background-color: #D6EAF8;
+    }
+
+ svg  text {
+        font-size: 50px;
+        font-family: Arial Black;
+        dominant-baseline: center;
+        text-anchor: middle;
+
+    }
+
+.footer{
+    background-color: #D6EAF8;
+    text-align: center;
+
+}
+.card{
+    background-color: #eaf3fa;
+    margin-top: 40%;
+    margin-bottom:5%;
+    margin-left: 40px ;
+    margin-right: 40px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+
+#tab-container{
+
+    padding-top: 20px;
+
+}
+
+.container{
+    scroll-padding: 20px;
+}
+
+
+.navbar-expand-lg {
+    background-color: #eaf3fa;
+
+}
+
+footer{
+
+    background-color:#D6EAF8;
+    text-align: center;
+    padding-top: 0.70cm;
+    height: 2cm;
+}
+
+
+.table-name{
+       color:rgb(40, 80, 131);
+
+
+}
+
+.nav-item dropdown{
+    color:#007bff;
+    font-weight: 400;
+}
+ h1{
+     text-align: justify;
+ }
+
+ .btn-btn-warning{
+    color:white;
+
+ }
+
+ body {
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+

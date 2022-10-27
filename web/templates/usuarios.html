@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/estilos.css" type="text/css">
+    <title>Usuarios</title>
+</head>
+<body>
+  <header>
+    <div>
+      <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="/inicio">
+        <svg width="300" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="48.17622070312501 9.197436523437503 403.64755859375 131.605126953125" style="background: #eaf3fa;" preserveAspectRatio="xMidYMid"><defs><filter id="editing-metal-beveled"><feGaussianBlur stdDeviation="4" in="SourceAlpha" result="blur"></feGaussianBlur><feSpecularLighting surfaceScale="5" specularConstant="0.8" specularExponent="7.5" lighting-color="#bbcedd" in="blur" result="specular"><fePointLight x="-250" y="-50" z="300"></fePointLight></feSpecularLighting><feComposite operator="in" in="specular" in2="SourceAlpha" result="comp"></feComposite><feComposite in="SourceGraphic" in2="comp" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"></feComposite></filter></defs><g filter="url(#editing-metal-beveled)"><g transform="translate(108.15500020980835, 99.34500122070312)"><path d="M56.88-41.34L56.88 0L48.69 0L48.69-26.69L34.28-1.34L34.28-1.34Q33.75-0.38 32.80 0.13L32.80 0.13L32.80 0.13Q31.84 0.63 30.75 0.63L30.75 0.63L30.75 0.63Q29.69 0.63 28.77 0.13L28.77 0.13L28.77 0.13Q27.84-0.38 27.31-1.34L27.31-1.34L12.84-26.69L12.84 0L4.72 0L4.72-41.34L4.72-41.34Q4.72-42.75 5.55-43.84L5.55-43.84L5.55-43.84Q6.38-44.94 7.72-45.31L7.72-45.31L7.72-45.31Q8.38-45.47 9.03-45.42L9.03-45.42L9.03-45.42Q9.69-45.38 10.30-45.14L10.30-45.14L10.30-45.14Q10.91-44.91 11.41-44.48L11.41-44.48L11.41-44.48Q11.91-44.06 12.25-43.47L12.25-43.47L30.75-11.31L49.25-43.47L49.25-43.47Q49.97-44.66 51.23-45.16L51.23-45.16L51.23-45.16Q52.50-45.66 53.88-45.31L53.88-45.31L53.88-45.31Q55.19-44.94 56.03-43.84L56.03-43.84L56.03-43.84Q56.88-42.75 56.88-41.34L56.88-41.34ZM73.66-48.06L73.66-40.72L65.53-40.72L65.53-48.06L73.66-48.06ZM73.66-33.78L73.66 0L65.53 0L65.53-33.78L73.66-33.78ZM118.88-18.75L118.88 0L110.75 0L110.75-18.75L110.75-18.75Q110.75-20.34 110.20-21.61L110.20-21.61L110.20-21.61Q109.66-22.88 108.72-23.78L108.72-23.78L108.72-23.78Q107.78-24.69 106.52-25.17L106.52-25.17L106.52-25.17Q105.25-25.66 103.78-25.66L103.78-25.66L89.56-25.66L89.56 0L81.44 0L81.44-29.75L81.44-29.75Q81.44-30.59 81.75-31.33L81.75-31.33L81.75-31.33Q82.06-32.06 82.63-32.61L82.63-32.61L82.63-32.61Q83.19-33.16 83.94-33.47L83.94-33.47L83.94-33.47Q84.69-33.78 85.53-33.78L85.53-33.78L103.84-33.78L103.84-33.78Q105.38-33.78 107.08-33.44L107.08-33.44L107.08-33.44Q108.78-33.09 110.45-32.33L110.45-32.33L110.45-32.33Q112.13-31.56 113.64-30.39L113.64-30.39L113.64-30.39Q115.16-29.22 116.33-27.55L116.33-27.55L116.33-27.55Q117.50-25.88 118.19-23.69L118.19-23.69L118.19-23.69Q118.88-21.50 118.88-18.75L118.88-18.75ZM155.72-33.78L155.72-25.66L141.53-25.66L141.53 0L133.31 0L133.31-25.66L122.75-25.66L122.75-33.78L133.31-33.78L133.31-44.81L141.53-44.81L141.53-33.78L155.72-33.78ZM194-22.59L194-11.19L194-11.19Q194-9.50 193.41-7.55L193.41-7.55L193.41-7.55Q192.81-5.59 191.48-3.92L191.48-3.92L191.48-3.92Q190.16-2.25 188.02-1.13L188.02-1.13L188.02-1.13Q185.88 0 182.81 0L182.81 0L168.16 0L168.16 0Q166.47 0 164.52-0.59L164.52-0.59L164.52-0.59Q162.56-1.19 160.89-2.52L160.89-2.52L160.89-2.52Q159.22-3.84 158.09-5.98L158.09-5.98L158.09-5.98Q156.97-8.13 156.97-11.19L156.97-11.19L156.97-11.19Q156.97-12.88 157.56-14.84L157.56-14.84L157.56-14.84Q158.16-16.81 159.48-18.48L159.48-18.48L159.48-18.48Q160.81-20.16 162.95-21.28L162.95-21.28L162.95-21.28Q165.09-22.41 168.16-22.41L168.16-22.41L182.81-22.41L182.81-14.66L168.16-14.66L168.16-14.66Q166.50-14.66 165.59-13.64L165.59-13.64L165.59-13.64Q164.69-12.63 164.69-11.13L164.69-11.13L164.69-11.13Q164.69-9.53 165.73-8.64L165.73-8.64L165.73-8.64Q166.78-7.75 168.22-7.75L168.22-7.75L182.81-7.75L182.81-7.75Q184.47-7.75 185.38-8.75L185.38-8.75L185.38-8.75Q186.28-9.75 186.28-11.25L186.28-11.25L186.28-22.59L186.28-22.59Q186.28-24.19 185.30-25.13L185.30-25.13L185.30-25.13Q184.31-26.06 182.81-26.06L182.81-26.06L164.97-26.06L164.97-33.78L182.81-33.78L182.81-33.78Q184.50-33.78 186.45-33.19L186.45-33.19L186.45-33.19Q188.41-32.59 190.08-31.27L190.08-31.27L190.08-31.27Q191.75-29.94 192.88-27.80L192.88-27.80L192.88-27.80Q194-25.66 194-22.59L194-22.59ZM221.50-18.44L240.63 0L228.91 0L212.53-15.81L212.53-15.81Q211.16-17.06 211.25-18.94L211.25-18.94L211.25-18.94Q211.31-19.81 211.70-20.58L211.70-20.58L211.70-20.58Q212.09-21.34 212.78-21.88L212.78-21.88L227.63-33.84L240.63-33.84L221.50-18.44ZM209.19-48.06L209.19 0L201.06 0L201.06-48.06L209.19-48.06ZM278.97-22.59L278.97-11.19L278.97-11.19Q278.97-9.50 278.38-7.55L278.38-7.55L278.38-7.55Q277.78-5.59 276.45-3.92L276.45-3.92L276.45-3.92Q275.13-2.25 272.98-1.13L272.98-1.13L272.98-1.13Q270.84 0 267.78 0L267.78 0L253.13 0L253.13 0Q251.44 0 249.48-0.59L249.48-0.59L249.48-0.59Q247.53-1.19 245.86-2.52L245.86-2.52L245.86-2.52Q244.19-3.84 243.06-5.98L243.06-5.98L243.06-5.98Q241.94-8.13 241.94-11.19L241.94-11.19L241.94-11.19Q241.94-12.88 242.53-14.84L242.53-14.84L242.53-14.84Q243.13-16.81 244.45-18.48L244.45-18.48L244.45-18.48Q245.78-20.16 247.92-21.28L247.92-21.28L247.92-21.28Q250.06-22.41 253.13-22.41L253.13-22.41L267.78-22.41L267.78-14.66L253.13-14.66L253.13-14.66Q251.47-14.66 250.56-13.64L250.56-13.64L250.56-13.64Q249.66-12.63 249.66-11.13L249.66-11.13L249.66-11.13Q249.66-9.53 250.70-8.64L250.70-8.64L250.70-8.64Q251.75-7.75 253.19-7.75L253.19-7.75L267.78-7.75L267.78-7.75Q269.44-7.75 270.34-8.75L270.34-8.75L270.34-8.75Q271.25-9.75 271.25-11.25L271.25-11.25L271.25-22.59L271.25-22.59Q271.25-24.19 270.27-25.13L270.27-25.13L270.27-25.13Q269.28-26.06 267.78-26.06L267.78-26.06L249.94-26.06L249.94-33.78L267.78-33.78L267.78-33.78Q269.47-33.78 271.42-33.19L271.42-33.19L271.42-33.19Q273.38-32.59 275.05-31.27L275.05-31.27L275.05-31.27Q276.72-29.94 277.84-27.80L277.84-27.80L277.84-27.80Q278.97-25.66 278.97-22.59L278.97-22.59Z" fill="#85a2b6"></path></g></g>
+        </svg>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+                
+                <li class="nav-item dropdown">
+                  
+                  <div class="dropdown">
+                    <button class=" btn navbar-brand" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Menú
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="/clientes" target="_blank">Clientes</a>
+                      <a class="dropdown-item" href="/proveedores" target="_blank">Proveedores</a>
+                      <a class="dropdown-item" href="/productos" target="_blank">Productos</a>
+                      <a class="dropdown-item" href="/compras" target="_blank">Compras</a>
+                      <a class="dropdown-item" href="/ventas" target="_blank">Ventas</a>
+                      <a class="dropdown-item" href="/saldos" target="_blank">Saldos</a>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <!-- botón Modal -->
+                  <button type="button" class="btn navbar-brand" data-toggle="modal" data-target="#exampleModalScrollable">Registrar usuario</button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalScrollableTitle">Registro de usuario</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/usuarios" method="post" autocomplete="off">
+                            <div class="form-column">
+                              <div class="form-group col-md-12">
+                                <label for="nomb_usuario">Nombre</label>
+                                <input type="text" maxlength="20" class="form-control" id="nomb_usuario" name="nomb_usuario" value="{{request.form.nomb_usuario}}" required>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="email">Email</label>
+                                <input type="email" maxlength="40" class="form-control" id="email" name="email" value="{{request.form.email}}" required>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="rol">Rol</label>
+                                <select id="rol" class="form-control" name="rol" required>
+                                  <option selected value="admin">Admin</option>
+                                  <option value="vendedor">Vendedor</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="contrasenia">Contraseña</label>
+                                <input type="password" minlength="6" maxlength="16" class="form-control" id="contrasenia" name="contrasenia" value="{{request.form.contrasenia}}" required>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                              <input type="submit" value="Registrar" class="btn btn-primary"/>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>  
+                            </div>       
+                          </form>
+
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class=" btn navbar-brand" href="#">Ayuda</a>
+                </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <a class=" btn navbar-brand" href="#">Admin</a>
+           <button formaction="/logout" class="btn btn-secondary my-2 my-sm-0" type="submit">Cerrar sesión</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+</header>
+    <div class="container">
+    <div class="container-fluid" id="tab-container">
+    <form  class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-3" type="search"  placeholder="Buscar usuario" aria-label="Buscar usuario"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+    <br/>
+    <br/>
+      {% if error %}
+      <div class="alert alert-danger" role="alert">
+        Error: {{error}}
+      </div>
+      {% endif %}
+      <header class="table-name"><h3>Todos los usuarios</h3></header>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Id usuario</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Email</th>
+              <th scope="col">Rol</th>
+              <th scope="col">Contraseña</th>
+              <th scope="col">Acción 1</th>
+              <th scope="col">Acción 2</th>
+            </tr>
+          </thead>
+          <tbody>
+          {% for usuario in usuarios %}
+            <tr>
+              <th scope="row">{{usuario.id_usuario}}</th>
+              <td>{{usuario.nomb_usuario}}</td>
+              <td>{{usuario.email}}</td>
+              <td>{{usuario.rol}}</td>
+              <td>{{usuario.contrasenia}}</td>
+              <td><form><button formaction="/usuarios/{{usuario.id_usuario}}" type="submit" class="btn btn-danger">Eliminar</button></form></td>
+              <td><button  type="submit" class="btn btn-info" data-toggle="modal" data-target="#exampleModalScrollable_user_{{usuario.id_usuario}}">Modificar</button></td>
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModalScrollable_user_{{usuario.id_usuario}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle_user_{{usuario.id_usuario}}" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalScrollableTitle_user_{{usuario.id_usuario}}">Modificar datos usuario</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form action="/usuarios/{{usuario.id_usuario}}/modificar" method="post" autocomplete="off">
+                            <div class="form-column">
+                              <div class="form-group col-md-12">
+                                <label for="id_usuario">Id usuario</label>
+                                <input type="number" class="form-control" id="id_usuario" name="id_usuario" value="{{usuario.id_usuario}}"  required>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="nomb_usuario_nuevo">Nombre</label>
+                                <input type="text" maxlength="20" class="form-control" id="nomb_usuario_nuevo" name="nomb_usuario" value="{{usuario.nomb_usuario}}" required>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="email_nuevo">Email</label>
+                                <input type="email" maxlength="40" class="form-control" id="email_nuevo" name="email" value="{{usuario.email}}" required>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="rol">Rol</label>
+                                <select id="rol_nuevo" class="form-control" name="rol" required>
+                                  <option selected value="admin">Admin</option>
+                                  <option value="vendedor">Vendedor</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-12">
+                                <label for="contrasenia_nueva">Contraseña</label>
+                                <input type="password" minlength="6" maxlength="16" class="form-control" id="contrasenia_nueva" name="contrasenia" value="{{usuario.contrasenia}}" required>
+                              </div>
+
+                            </div>
+                            <div class="modal-footer">
+                              <input type="submit" value="Modificar" class="btn btn-primary"/>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            </div>
+                          </form>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+           </tr>
+
+            {% endfor %}
+          </tbody>
+        </table>
+        <hr/>
+
+    </div>
+    </div>
+    
+    <footer><h5> Creado por Maria - 2021 </h5></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>  
+</body>
+</html>
