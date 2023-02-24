@@ -88,19 +88,4 @@ def buscar_id_cliente(id_cliente):
              } for registro in bd.ejecutar_sql(buscar_id_cliente_sql)]
 
 
-# buscar cliente por nombre y apellido
 
-'''def obtener_cliente_nombre_apellido(nomb_cliente, apellido_cliente):
-    obtener_cliente_sql = f"""
-            SELECT ID_CLIENTE, NOMB_CLIENTE, APELLIDO_CLIENTE, DIRE_CLIENTE, TEL_CLIENTE, TOPE_CREDITO
-            FROM CLIENTE 
-            WHERE NOMB_CLIENTE='{nomb_cliente}' AND APELLIDO_CLIENTE='{apellido_cliente}'
-        """
-    bd = BaseDatos()
-    return [{"id_cliente": registro[0],
-             "nomb_cliente": registro[1],
-             "apellido_cliente": registro[2],
-             "dire_cliente": registro[3],
-             "tel_cliente": registro[4],
-             "tope_credito": registro[5]
-             } for registro in bd.ejecutar_sql(obtener_cliente_sql)]'''
