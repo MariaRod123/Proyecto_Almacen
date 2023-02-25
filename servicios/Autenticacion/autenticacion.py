@@ -57,27 +57,3 @@ def login(nomb_usuario, rol, contrasenia):
 
 
 
-'''def validar_sesion(id_sesion):
-    sesion = modelos_Sesion.obtener_sesion(id_sesion)
-    if len(sesion) == 0:
-        return False
-    elif (datetime.now() - datetime.strptime(sesion[0]['fecha_hora'], "%d/%m/%Y %H:%M")).total_seconds() > 60:
-        # Sesion expirada
-        return "La sesión expiró", False
-    else:
-        return True '''
-
-
-# esto parece que esta bien
-'''def login(nomb_usuario, rol, contrasenia):
-    if _existe_usuario_login(nomb_usuario, rol, contrasenia):
-        usuario = modelo_usuario.obtener_u(nombre, clave)[0]
-        return usuario
-    else:
-        raise Exception("el usuario no existe o la clave es incorrecta") '''
-
-
-# esto tambien (modificar para mi proyecto)
-'''def _existe_usuario_login(nomb_usuario, rol, contrasenia):
-    usuarios = modelo_usuario.buscar_datos_login(nomb_usuario, rol, contrasenia)
-    return usuarios and (len(usuarios) > 0)   '''
